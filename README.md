@@ -1,7 +1,13 @@
 # Kernel-Stable
-Custom kernel for Lilidog from https://www.kernel.org/
-## Made for Lilidog.  
+Custom kernel for Lilidog from https://www.kernel.org/ 
 ### This kernel should work for most Debian based systems.
+
+This is a "Long Term support" kernel suitable for stable Debian. <br/>
+Please note that these images are not patched by Debian to remove non-free items.
+
+Both the unstable and stable kernel version should provide for various improvements throughout the build.
+Find the unstable version here: https://github.com/sleekmason/Kernel-Unstable
+
 Features:
 
 - amd64
