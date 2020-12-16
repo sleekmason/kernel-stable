@@ -1,26 +1,30 @@
 # Kernel-Stable
-Custom kernel for Lilidog from https://www.kernel.org/ 
+
+Custom kernel for Lilidog. Built with sources from https://www.kernel.org/ 
+
 ### This kernel should work for most Debian based systems.
 
-This is a "Long Term support" kernel suitable for stable Debian. <br/>
+This is a "Long Term support" kernel I am using as a custom base, and is suitable for stable Debian. <br/>
 Please note that these images are not patched by Debian to remove non-free items.
 
-Both the unstable and stable kernel version should provide for various improvements throughout the build.
+Both the unstable and stable kernel version should provide for various improvements throughout the build. <br/>
 Find the unstable version here: https://github.com/sleekmason/Kernel-Unstable
 
-Features:
+__Features:__
 
 - amd64
 - Long term support kernel with the latest updates.
 - Debugging mostly removed.
-- support for ntfs read and write.
-- timer frequency of 1000 vs 250 for desktop use.
+- Support for ntfs read and write.
+- Timer frequency of 1000 vs 250 for desktop use.
 - The ability to access the .config through /proc/config.gz (or dmesg in a terminal).
 - Compressed cache for swap pages.
-- more to come.
+- Nothing removed by Debian
+- More to come.
 
 ## Instructions
-Download the Folder containing both the kernels and the headers.
+
+Download the Folder containing both the kernels and the headers. <br/>
 Open a terminal in the resultant folder.
 ```sh
 sudo dpkg -i *.deb
@@ -34,12 +38,12 @@ sudo apt remove <Name of image>
 
 ## Build your own!
 
-- Lilidog comes with all the necessary packages to build your own kernel
-- Download and install one of the kernel and headers above so you have the basic configuration.
-- Boot into the kernel you just installed.
-- Download the tarball from https://www.kernel.org/ to match the version above.
-- Open a terminal.
-- Make a directory to work from:
+Lilidog comes with all the necessary packages to build your own kernel <br/>
+Download and install one of the kernel and headers above so you have the basic configuration. <br/>
+Boot into the kernel you just installed. <br/>
+Download the tarball from https://www.kernel.org/ to match the version above. <br/>
+Open a terminal. <br/>
+Make a directory to work from:
 ```sh
 mkdir kernel
 ```
@@ -47,26 +51,26 @@ mkdir kernel
 cd kernel
 ```
 
-- Place the tarball into kernel and:
+Place the tarball into kernel and:
 ```sh
 tar -xaf <linux-image-xx.xxxxx>
 ```
 Use tab to autocomplete the name of the image.
-- Change directories into the resultant folder.
+Change directories into the resultant folder.
 ```sh
 make menuconfig
 ```
 This will grab the existing configuration and open up a dialog to make changes to the kernel.
-- Make any changes, save and close.
+Make any changes, save and close.
 ```sh
 make -j3 deb-pkg
 ```
 
-- Go get a cup of coffee and hang out for a bit. while it makes.
-- Install like you did the first one.
-- Rinse and repeat.
+Go get a cup of coffee and hang out for a bit. while it makes. <br/>
+Install like you did the first one. <br/>
+Rinse and repeat.
 
-There are numerous guides online, including my own. Feel free to email me for 
+There are numerous guides online, including my own. Feel free to email me for <br/>
 a location to one of my own, or probably just search:)
 
 sleekmason@gmail.com
