@@ -1,8 +1,6 @@
 # Kernel-Stable
 
-Custom kernel for Lilidog. Built with sources from https://www.kernel.org/ 
-
-### This kernel should work for most Debian based systems.
+Custom kernel to go with Lilidog. Built with sources from https://www.kernel.org/ 
 
 This is a "Long Term support" kernel I am using as a custom base, and is suitable for stable Debian. <br/>
 Please note that these images are not patched by Debian to remove non-free items.
@@ -19,7 +17,6 @@ __Features:__
 - Timer frequency of 1000 vs 250 for desktop use.
 - The ability to access the .config through /proc/config.gz (or dmesg in a terminal).
 - Compressed cache for swap pages.
-- Nothing removed by Debian
 - More to come.
 
 ## Instructions
